@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .sample{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+            animation-name:example;
+            animation-duration:8s;
+            animation-timing-function:ease-out;
+        }
+        
+        @-webkit-keyframes example{
+            from {background-color:green;
+            margin-left:0px;}
+            to {background-color:yellow;
+            margin-left:200px;}
+        }
+        @keyframes example{
+            from {background-color:green;
+            margin-left:0px;}
+            to {background-color:yellow;
+            margin-left:200px;}
+        }
+        
+    </style>
+</head>
+<body>
+    <p>2초 지연 2회 실행.</p>
+    <div class="sample"></div>
+    
+</body>
+</html>
